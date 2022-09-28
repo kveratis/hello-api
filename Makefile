@@ -1,8 +1,6 @@
 GO_VERSION := 1.19.1
 
-setup:
-	install-go
-	init-go
+setup: install-go init-go
 
 install-go:
 	wget "https://golang.org/dl/go$(GO_VERSION).linux-amd64.tar.gz"
