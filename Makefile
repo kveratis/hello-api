@@ -12,7 +12,7 @@ init-go:
 	echo 'export PATH=$$PATH:$${HOME}/go/bin' >> $${HOME}/.bashrc
 
 build:
-	go build -o api cmd/main.go
+	go build -o api main.go
 
 test:
 	go test ./... -coverprofile=coverage.out
